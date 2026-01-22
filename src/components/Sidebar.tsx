@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from '../app/dashboard/dashboard.module.css';
-import { LayoutDashboard, Users, Calendar, Settings, HeartPulse, LogOut, FileText } from 'lucide-react';
+import { LayoutDashboard, Users, Calendar, Settings, HeartPulse, LogOut, FileText, Activity } from 'lucide-react';
 
 export default function Sidebar() {
     const pathname = usePathname();
@@ -39,6 +39,10 @@ export default function Sidebar() {
                 <Link href="/dashboard/reports" className={`${styles.navItem} ${isActive('/dashboard/reports') ? styles.navItemActive : ''}`}>
                     <FileText size={20} />
                     Reports
+                </Link>
+                <Link href="/dashboard/predict" className={`${styles.navItem} ${isActive('/dashboard/predict') ? styles.navItemActive : ''}`}>
+                    <Activity size={20} />
+                    AI Risk Check
                 </Link>
                 <Link href="/dashboard/schedule" className={`${styles.navItem} ${isActive('/dashboard/schedule') ? styles.navItemActive : ''}`}>
                     <Calendar size={20} />

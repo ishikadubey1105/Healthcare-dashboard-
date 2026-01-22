@@ -7,10 +7,19 @@ HealthPulse is a state-of-the-art healthcare analytics dashboard designed to emp
 
 ## Features
 - **Real-Time Patient Analytics**: Monitor patient flow, admission rates, and discharge status instantly.
-- **Predictive Health Modeling**: AI-driven forecasts for disease outbreaks and resource utilization.
+- **AI-Powered Heart Disease Prediction**: Machine learning model trained on real Kaggle dataset with 84% accuracy.
 - **Interactive Data Visualization**: Dynamic charts and graphs for department loads and waiting times.
 - **Secure & Compliant**: Designed with HIPAA compliance standards in mind (demo version).
 - **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
+
+## Dataset
+The heart disease prediction model is trained on the **UCI Heart Disease Dataset** from Kaggle:
+- **Source**: [Heart Disease Prediction Dataset](https://raw.githubusercontent.com/kb22/Heart-Disease-Prediction/master/dataset.csv)
+- **Features**: 13 clinical parameters (age, sex, chest pain type, blood pressure, cholesterol, etc.)
+- **Target**: Binary classification (presence/absence of heart disease)
+- **Size**: 303 patient records
+- **Model**: Logistic Regression with StandardScaler preprocessing
+- **Accuracy**: ~84% on test set
 
 ## Tech Stack
 - **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
